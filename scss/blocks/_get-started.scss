@@ -1,0 +1,58 @@
+.get-started {
+  margin-bottom: 5.3333em;
+
+  .wrap {
+    background-color: #e6f7ff;
+    padding: 4.2em 0 4.2em 4.2666em;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 2.8em; // 42
+
+    line-height: 1.2;
+    letter-spacing: 0em;
+    color: #1f1f1f;
+    margin-bottom: 0.4285em;
+  }
+
+  &__desc {
+    margin: 0;
+    font-size: 1.2em; // 18
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #1f1f1f;
+    margin-bottom: 2em;
+    max-width: 26.7222em;
+  }
+
+  &__link {
+    font-size: 1.1333em; // 17
+    padding: 0.5333em 2.13333em;
+    margin-bottom: 1.1764em;
+    display: inline-block;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #023348;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2.1333em;
+    padding-left: 1.3333em;
+    list-style-image: url('	../images/get-started.svg');
+  }
+
+  &__item {
+    font-size: 0.8667em; // 13
+    line-height: 1.61538;
+    letter-spacing: 0.02em;
+    color: #626a72;
+  }
+}

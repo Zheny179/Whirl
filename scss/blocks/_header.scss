@@ -1,0 +1,142 @@
+.header {
+  padding: 1.66em 0px 1.66em 0px;
+  margin-bottom: 5.33em;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 2.4em;
+    align-items: center;
+  }
+
+  .btns__sing {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #0070a0;
+      color: #fff;
+      padding: 0.4em 1.33em;
+    }
+  }
+
+  .btns__demo {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: rgb(54, 188, 250);
+      color: #054b69;
+    }
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 1.6em;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #33383f;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 0px;
+      height: 2px;
+      background-color: #000;
+      transform: translate(-50%, 100%);
+      transition: all 0.4s;
+    }
+
+    &:hover::before {
+      transform: translate(100% 0);
+      width: 100%;
+    }
+
+    &:active:before {
+      transform: translate(100% 0);
+      width: 25%;
+    }
+  }
+
+  &__link:hover {
+    color: #0e1117;
+  }
+}
+
+.btns {
+  display: flex;
+  gap: 2.06em;
+  align-items: center;
+
+  &-stroke {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #fff;
+
+    background: #0070a0;
+    padding: 0.4em 1.33em;
+  }
+
+  &-color {
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: #0070a0;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header {
+    margin-bottom: 1.33em;
+    .wrap {
+      flex-direction: column;
+    }
+  }
+}
+@media screen and (max-width: 360px) {
+  .header {
+    .wrap {
+      gap: 2.2em;
+    }
+
+    .wrapper {
+      gap: 1.4em;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .header {
+    margin-bottom: 4em;
+  }
+}
+@media screen and (max-width: 368px) {
+  .header {
+    .wrap {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+    }
+  }
+}

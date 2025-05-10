@@ -1,0 +1,41 @@
+.footer {
+  .wrap {
+    border-top: 1px solid #dee5eb;
+    padding: 2.3333em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    margin: 0;
+    font-size: 0.8666em; // 13
+    line-height: 1.50769;
+    letter-spacing: 0.02em;
+    color: #1f1f1f;
+
+    a {
+      line-height: 1.50769;
+      letter-spacing: 0.02em;
+      color: #0070a0;
+
+      &:hover {
+        color: #024c6c;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 1.3333em;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .footer {
+    .wrap {
+      padding: 3em 2em;
+    }
+  }
+}

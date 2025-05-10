@@ -1,0 +1,81 @@
+.workflow {
+  padding: 5.333em 0;
+  background-color: #0070a0;
+  margin-bottom: 8em;
+
+  .wrap {
+    display: flex;
+    align-items: center;
+    gap: 12.46em;
+    justify-content: space-between;
+  }
+
+  &__content {
+    max-width: 30.33em;
+  }
+
+  &__title {
+    margin: 0;
+    font-family: $second-family;
+    font-weight: 400;
+    font-size: 2.8em; //42
+    line-height: 1.2;
+    letter-spacing: 0em;
+    color: #fff;
+    margin-bottom: 0.4285em;
+  }
+
+  &__desc {
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    color: #fff;
+    font-size: 1.2em; //18
+    margin-bottom: 0.8888em;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    margin-bottom: 1.333em;
+    list-style-image: url('../images/workflow.svg');
+    padding-left: 1.7333em;
+  }
+
+  &__item {
+    font-size: 1.0666em;
+    line-height: 1.35;
+    letter-spacing: 0.01em;
+    color: #fff;
+    position: relative;
+    list-style: inherit;
+  }
+
+  .btns-stroke {
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #023348;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .workflow {
+    margin-bottom: 4em;
+    .wrap {
+      gap: 5em;
+    }
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .workflow {
+    &__img {
+      display: none;
+    }
+  }
+}
