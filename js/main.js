@@ -7,5 +7,3 @@ btns.forEach(btn => {
     btn.closest('.menu').classList.toggle('active')
   })
 })
-
-const infoNewsletterForm = document.querySelector('#info-newsletter-form')
